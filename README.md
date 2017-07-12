@@ -13,7 +13,7 @@ gostruct will generate struct from your
 * [Support](#support)
 * [Getting Started](#getting-started)
 * [Example](#example)
- 
+
 
 
 ## Support
@@ -52,3 +52,5 @@ $GOPATH/bin/gostruct generate
 # Example
 ~/go/bin/gostruct generate
 ```
+
+![Example to use Faker](gostruct.gif)
