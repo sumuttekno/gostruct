@@ -63,14 +63,12 @@ func (g *Generator) mysqlGenerator() {
 
 func (g *Generator) generateStruct(list []models.DataGenerator) {
 	if len(list) < 1 {
-		panic("No Table existed")
+		panic("Table Not Exist")
 	}
 
 	for i := 0; i < len(list); i++ {
 		g.generateFile(&list[i])
 	}
-
-	fmt.Println("SOMETHING BIGGER ", build.Default.GOPATH)
 
 }
 
