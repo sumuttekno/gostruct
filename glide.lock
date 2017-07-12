@@ -17,7 +17,7 @@ imports:
   - hcl/token
   - json/parser
   - json/scanner
-  - json/token
+  - json/token 
 - name: github.com/huandu/xstrings
   version: 3959339b333561bf62a38b424fd41517c2c90f40
 - name: github.com/imdario/mergo

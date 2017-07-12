@@ -2,8 +2,8 @@ package generator
 
 import (
 	"database/sql"
-	"fmt"
-	"go/build"
+	"fmt" 
+	"go/build" 
 	"os"
 	"strings"
 	"text/template"
@@ -63,7 +63,9 @@ func (g *Generator) mysqlGenerator() {
 
 func (g *Generator) generateStruct(list []models.DataGenerator) {
 	if len(list) < 1 {
+ 
 		panic("Table Not Exist")
+ 
 	}
 
 	for i := 0; i < len(list); i++ {
@@ -73,9 +75,11 @@ func (g *Generator) generateStruct(list []models.DataGenerator) {
 }
 
 func (g *Generator) generateFile(dataSend *models.DataGenerator) {
+ 
 	projectPackages := "github.com/sumuttekno/gostruct"
 	temp, err := template.New("").Funcs(sprig.TxtFuncMap()).ParseFiles(build.Default.GOPATH + "/src/" + projectPackages + "/generator/struct_template.tpl")
-
+ 
+ 
 	if err != nil {
 		panic("Unknown Error " + err.Error())
 	}
