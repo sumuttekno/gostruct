@@ -3,7 +3,7 @@ go:
 - 1.8
 
 before_install:
-  - go get -t -v ./...
+  - dep ensure -v
 
 script:
   - go test -race -coverprofile=coverage.txt -covermode=atomic
